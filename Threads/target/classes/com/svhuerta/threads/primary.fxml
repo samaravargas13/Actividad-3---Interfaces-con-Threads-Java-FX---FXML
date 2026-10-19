@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svhuerta.threads.PrimaryController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Contar número de clics" />
+        <TextField fx:id="txtContador" alignment="CENTER" editable="false" prefWidth="200.0" text="0" />
+        <Button fx:id="btnContar" onAction="#handleBtnContar" text="¡Contar!" />
+        
+        <Label text="Esperar 10 segundos" />
+        <ProgressBar fx:id="progressBar" prefWidth="250.0" progress="0.0" />
+        <Button fx:id="btnEsperar" onAction="#handleBtnEsperar" text="¡Esperar!" />
+    </children>
+</VBox>
